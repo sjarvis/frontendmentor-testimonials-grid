@@ -58,4 +58,82 @@ h6 {
 body {
      font-family: 'Barlow Semi Condensed', sans-serif;
      font-weight: 500;
+     background-color: var(--lt-gray-blue);
+}
+
+
+main {
+     max-width: 70rem;
+}
+
+.card {
+     max-width: 90%;
+     border-radius: 1rem;
+     background-color: var(--lt-gray);
+
+     margin-block: 0 1rem;
+     margin-inline: auto;
+     padding: 1.75rem;
+}
+
+.card .card-header {
+     display: flex;
+     align-items: center;
+     justify-items: start;
+     gap: 1rem;
+     margin-block-end: 1rem;
+}
+
+.card-header img {
+     border-radius: 9999px;
+     border: 3px solid var(--lt-gray);
+     max-width: 3rem;
+}
+
+.card-header h2 {
+     font-size: 1.1rem;
+}
+
+.card-header h2 span {
+     display: block;
+     font-size: .9rem;
+     opacity: 0.5;
+}
+
+
+.card p {
+     line-height: 1.2;
+     opacity: 0.7;
+}
+
+.card p.quote {
+     font-weight: 600;
+     font-size: 1.5rem;
+     margin-block-end: 1rem;
+}
+
+
+.dan {
+     background-color: var(--violet);
+     color: var(--white);
+}
+
+.jon {
+     background-color: var(--dk-gray-blue);
+     color: var(--white);
+}
+
+.jean {
+     background-color: var(--white);
+     color: var(--dk-black-blue);
+}
+
+.pat {
+     background-color: var(--dk-black-blue);
+     color: var(--white);
+}
+
+.kira {
+     background-color: var(--white);
+     color: var(--dk-black-blue);
 }
