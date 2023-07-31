@@ -51,7 +51,6 @@ h6 {
      --white: hsl(0, 0%, 100%);
      --lt-gray: hsl(0, 0%, 81%);
      --lt-gray-blue: hsl(210, 46%, 95%);
-
 }
 
 
@@ -60,7 +59,6 @@ body {
      font-weight: 500;
      background-color: var(--lt-gray-blue);
 }
-
 
 main {
      max-width: 70rem;
@@ -102,7 +100,6 @@ main {
      opacity: 0.5;
 }
 
-
 .card p {
      line-height: 1.2;
      opacity: 0.7;
@@ -138,4 +135,60 @@ main {
 .kira {
      background-color: var(--white);
      color: var(--dk-black-blue);
+}
+
+
+
+
+
+@media (min-width: 768px) {
+
+     .container {
+          width: 100dvw;
+          height: 100dvh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+
+     main {
+          margin-inline: auto;
+
+
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+
+          gap: 2rem;
+     }
+
+     .card {
+          margin-block: 0;
+          margin-inline: 0;
+
+          font-size: .9em;
+          max-width: 100%;
+     }
+
+     .dan {
+          grid-column: 1 / span 2;
+     }
+
+     .jon {
+          grid-column: 3;
+     }
+
+     .jean {}
+
+     .pat {
+          grid-column: 2 / span 2;
+          grid-row: 2;
+     }
+
+     .kira {
+          grid-column: 4;
+          grid-row: 1 / span 2;
+     }
+
 }
